@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+body {
+  background: #ededed;
+  font-family: Raleway, Rawline, Arial, sans-serif;
+  color: #333;
+}
+.hc {
+  filter: contrast(1.4) saturate(1.3);
+}
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #ffcd07;
+  outline-offset: 2px;
+}
+@keyframes up {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.up {
+  animation: up 0.25s ease-out;
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #decl,
+  #decl * {
+    visibility: visible;
+  }
+  #decl {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
