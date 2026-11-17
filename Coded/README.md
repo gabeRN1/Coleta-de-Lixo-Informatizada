@@ -14,6 +14,9 @@ npm run format     # Prettier
 npm run build      # checa tipos e gera /dist
 ```
 
+Informação sobre compatibilidade: para execução local em Ubuntu 18.04, será necessária a versão Node.js 16 (conforme instruções em https://nodesource.com/products/distributions). Além disso, será necessário o downgrade do Vite para a versão 4.
+
+
 Dados de demonstração: CPF `111.444.777-35`, senha `palmas2026`, código do contêiner `7589`.
 
 ## Arquitetura
